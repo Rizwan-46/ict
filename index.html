@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<div class="page">
+     <div class="navbar" id="navbar">
+         <div class="logo"><h1>W.</h1></div>
+         <nav>
+            
+            <ul id="list">
+                <li><i class="fa-solid fa-xmark" onclick="closemenu() "></i></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main">
+        <div class="sub-container" id="sub-container">
+           <div class="mini-subcontainer" id="mini-subcontainer">
+           </div>
+           <div class="mini-subcontainer">
+              <main class="news-detail">
+                <h1>Palestine conflict</h1>
+                <p>Israeli forces arrest dozens of Palestinians in occupied West Bank. The Palestinian Prisoners' Club, an NGO representing prisoners and detainees, says Israeli forces have arrested 40 Palestinians overnight, bringing the total number of detainees in the occupied West Bank and East Jerusalem to 2,850 since October 7.7  <br>
+                    <button>Read More</button>
+                </p>
+              </main>
+           </div>
+        </div>
+        <div class="sub-container">
+            <h1 id="news">News</h1>
+           <div class="complete">
+            <div class="one">
+                <img src="./image-top-laptops.jpg" alt="">
+                <div class="more-detail">
+                    <h2>Top 10 Laptops of 2022</h2>
+                    <p>Our best picks for various needs and budgets.</p>
+                </div>
+            </div>
+            <div class="one">
+                <img src="./image-gaming-growth.jpg" alt="">
+                <div class="more-detail">
+                    <h2>The Growth of Gaming</h2>
+                    <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </div>
+           </div>
+       </div>
+
+
+</div>
+ <script>
+      var sidemenu = document.getElementById("list")
+        function openmenu() {
+            sidemenu.style.right ='0';
+        }
+        function closemenu() {
+            sidemenu.style.right ='-500px';
+        }
+   </script>
+</body>
+</html>

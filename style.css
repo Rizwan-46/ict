@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body .page{
+    padding: 0 50px;
+}
+.navbar{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between    ;
+    position: static;
+}
+.navbar .logo h1{
+    font-size: 33px;
+    font-weight: bold;
+
+}
+nav{
+    text-align: right;
+    float: right;
+}
+nav .fa-solid{
+    display: none;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: 'poppins';
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-family: 'poppins';
+    font-weight: 500;
+    transition: color .3s;
+}
+nav ul li a:hover{
+    color: rgb(212, 73, 22);
+}
+
+
+/* CSS FOR MAIN */
+.main{
+    display: grid;
+    height: 85vh;
+    /* border: 1px solid black; */
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+/* .sub-container{
+    border:1px solid black;
+} */
+#sub-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.6fr .5fr;
+}
+#mini-subcontainer{
+    background-image: url(large.jpeg);
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top 80%;
+}
+/* .mini-subcontainer{
+    border:1px solid black; 
+} */
+.news-detail{
+    display: flex;
+}
+.news-detail h1{
+    margin: 20px 40px;
+    font-size: 35px;
+    font-family: 'REM', sans-serif;
+}
+.news-detail p{
+    margin: 20px 40px;
+    font-size: 16px;
+    color:#000000;
+    font-family: 'Montserrat', sans-serif;
+}
+.news-detail p button{
+    width: 160px;
+    height: 40px;
+    border-radius: 0px;
+    background-color: rgb(212, 73, 22);
+    font-size: 18px;
+    font-family: 'REM', sans-serif;
+    font-weight: lighter;
+    color: white;
+    margin-top: 10px;
+    border: 1px solid rgb(212, 73, 22);
+}
+.news-detail p button:hover{
+    background-color: rgb(1, 1, 33);
+}
+
+#news{
+    color: rgb(212, 73, 22);
+    font-family: 'REM', sans-serif;
+    padding-left: 30px;
+}
+.complete {
+    display: flex;
+    flex-direction: row;
+    padding:0 20px;
+    margin-top: 30px;
+}
+.complete .one{
+    margin: 0 10px;
+}
+.one .more-detail{
+    margin-top: 20px;
+}
+.one .more-detail h2{
+    font-family: 'REM';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.one .more-detail p{
+    font-family: 'Montserrat';
+}
+@media screen and (max-width: 450px){
+   .page{
+    width: 100%;
+   }
+    nav ul li{
+            display: block;
+            text-align: left;
+            margin: 10px 0;
+    }
+    .main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    nav .fa-solid{
+        display: block;
+    }
+    #mini-subcontainer{
+        width: 100%;
+        background-image: url(small-1.jpeg);
+        background-repeat: no-repeat;
+       background-size: cover;
+
+    }
+    #sub-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .news-detail{
+        display: block;
+    }
+    .news-detail h1{
+        margin: 20px 10px;
+        font-size: 35px;
+        font-family: 'REM', sans-serif;
+    }
+    .news-detail p{
+        margin: 20px 10px;
+        font-size: 16px;
+        color:#000000;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .complete {
+        display: block;
+        flex-direction: row;
+        padding:0 20px;
+        margin-top: 30px;
+    }
+    .complete .one{
+        margin: 20px 10px;
+    }
+    #list .fa-solid{
+        display: block;
+    }
+    .navbar .fa-bars{
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        top: 2%;
+        right: 4%;
+        color: rgb(92, 82, 82);
+    }
+    .fa-xmark{
+        font-size: 25px;
+        position: absolute;
+        top: 1.5%;
+        left: 3%;
+        padding: 3px 5px;
+        color: rgb(92, 82, 82);
+    }
+    .fa-xmark:hover{
+        border: 2px solid gray;
+        border-radius: 2px;
+        color: black;
+    }
+    .fa-bars:hover{
+        border: 1px solid gray;
+        border-radius: 2px;
+        color: black;
+    }
+    #list{
+        background: white;
+        position: fixed;
+        right: -500px;
+        width: 60%;
+        height: 100vh;
+        padding-top: 60px;
+        z-index: 2;
+        overflow: hidden;
+        transition: all .4s ease;
+        padding-left: 40px;
+}
+}
